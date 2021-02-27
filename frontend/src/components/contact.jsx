@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
+import useApplicationData from '../hooks/useApplicationData'
+
 
 export default function Contact() {
-  const [email, useEmail] = useState("");
-  const [name, useName] = useState("");
-  const [message, useMessage] = useState("");
-
+  const { handleInput } = useApplicationData();
   return (
-    <form autoComplete="off">
-      <input
-        type="text"
-        name="name"
-        value={useName}
-        placeholder="eg. John Smith"
-      />
-      <input 
-        type="email"
-        name="email"
-        value={useEmail}
-        placeholder="eg. JSmith@example.com"
-      />
-      <input
-        type="text"
-        name="message"
-        value={useMessage}
-        placeholder="Send me a message"
-      />
-      <button
-        type="submit"
-        onClick={(event) => event.preventDefault()}
-      >Submit
+    <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
+      <label>Name
+        <input
+          type="text"
+          name="name"
+          onChange = {handleInput}
+        />
+      </label>
+      <label>Email
+        <input 
+          type="email"
+          name="email"
+          onChange = {handleInput}
+        />
+      </label>
+      <label>Message
+        <input
+          type="text"
+          name="message"
+          onChange = {handleInput}
+        />
+      </label>
+      <button type="submit">
+        Submit
       </button>
 
     </form>
