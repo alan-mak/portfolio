@@ -1,0 +1,19 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+
+  label {
+    input {
+      width: 100%;
+      margin: 0 auto;
+      #messageBox {
+        height: 30%;
+      }
+    }
+  }
+  button {
+    margin: 0 auto;
+  }
+}

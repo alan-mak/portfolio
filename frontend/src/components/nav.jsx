@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Nav() {
   return (
-    <div>
-      About
-      Projects
-      Contact
-    </div>
+    <ul>
+      <li>About</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
   )
 }

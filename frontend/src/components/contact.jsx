@@ -1,6 +1,6 @@
 import React from 'react';
 import useApplicationData from '../hooks/useApplicationData'
-
+import './contact.scss'
 
 export default function Contact() {
   const { handleInput } = useApplicationData();
@@ -25,6 +25,7 @@ export default function Contact() {
           type="text"
           name="message"
           onChange = {handleInput}
+          id="messageBox"
         />
       </label>
       <button type="submit">
