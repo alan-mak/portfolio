@@ -5,6 +5,8 @@ import './contact.scss'
 export default function Contact() {
   const { handleInput } = useApplicationData();
   return (
+    <div className="contact">
+      Feel free to contact me!
     <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
       <label>Name
         <input
@@ -28,10 +30,10 @@ export default function Contact() {
           id="messageBox"
         />
       </label>
-      <button type="submit">
+      <button onClick={() => console.log("BEEP")}>
         Submit
       </button>
-
     </form>
+    </div>
   )
 }
