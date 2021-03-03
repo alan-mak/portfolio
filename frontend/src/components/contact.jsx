@@ -7,6 +7,9 @@ export default function Contact() {
   return (
     <div className="contact">
       Feel free to contact me!
+      Twitter
+      LinkedIn
+      Instagram
     <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
       <label>Name
         <input

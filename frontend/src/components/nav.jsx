@@ -1,11 +1,12 @@
 import React from 'react';
+import './nav.scss'
 
 export default function Nav() {
   return (
     <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
+      <button>Projects</button>
+      <button>About</button>
+      <button>Contact</button>
     </ul>
   )
 }
