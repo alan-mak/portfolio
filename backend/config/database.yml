@@ -68,7 +68,7 @@ test:
   encoding: unicode
   database: backend_test
   pool: 5
-  username: taylor
+  username: alan
   password: <%= ENV['POSTGRES_PASS'] %>
   timeout: 5000
 
