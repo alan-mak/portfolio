@@ -4,14 +4,24 @@ import Footer from './components/footer'
 import Contact from './components/contact'
 import About from './components/about'
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 function App() {
   return (
+    <Router >
     <div>
       <Nav />
-      {/*<Contact />*/}
-      {/*<About />*/}
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
       <Footer />
     </div>
+    </Router>
   )
 }
 
