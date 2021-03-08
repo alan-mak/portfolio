@@ -2,6 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  .socials {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      #twitter {
+        color: #55acee;
+      }
+      #linkedin {
+        color: #0976b4;
+      }
+      #instagram {
+        color: #3f729b;
+      }
+    }
+  }
   
   form {
     width: 75%;

@@ -1,15 +1,27 @@
 import React from 'react';
-import useApplicationData from '../hooks/useApplicationData'
-import './contact.scss'
+import useApplicationData from '../hooks/useApplicationData';
+
+import './contact.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function Contact() {
   const { handleInput } = useApplicationData();
   return (
     <div className="contact">
       Feel free to contact me!
-      Twitter
-      LinkedIn
-      Instagram
+      <div className="socials">
+        <a href="https://twitter.com/alan_mak13">
+          <FontAwesomeIcon icon={faTwitter} size="4x" id="twitter"/>
+        </a>
+        <a href="https://www.linkedin.com/in/alanmak95/">
+          <FontAwesomeIcon icon={faLinkedin} size="4x" id="linkedin"/>
+        </a>
+        <a href="https://www.instagram.com/alan_mak13/">
+          <FontAwesomeIcon icon={faInstagram} size="4x" id="instagram"/>
+        </a>
+      </div>
     <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
       <label>Name
         <input
