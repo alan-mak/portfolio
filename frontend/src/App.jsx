@@ -10,8 +10,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <Router >
-    <div>
+    <div id="pageContainer">
       <Nav />
+      <div id="contentContainer">
       <Switch>
         <Route path="/about">
           <About />
@@ -23,7 +24,10 @@ function App() {
           <Skills />
         </Route>
       </Switch>
-      <Footer />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
     </Router>
   )
