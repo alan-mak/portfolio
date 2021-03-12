@@ -6,6 +6,7 @@
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     a {
       #twitter {
         color: #55acee;
@@ -14,7 +15,16 @@
         color: #0976b4;
       }
       #instagram {
-        color: #3f729b;
+        background: #d6249f;
+        color: #fff;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        border-radius: 5px;
+        height: 58px;
+        width: 58px;
+      }
+      #github {
+        height: 64px;
+        width: 64px;
       }
     }
   }
@@ -30,13 +40,14 @@
         width: 100%;
         margin: 0 auto;
       }
-      
+
        #messageBox {
         height: 80px;
       }
     }
     button {
       margin: 0 auto;
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
     }

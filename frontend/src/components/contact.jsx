@@ -5,6 +5,7 @@ import './contact.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Gitdark from '../img/github-dark.png'
 
 export default function Contact() {
   const { handleInput } = useApplicationData();
@@ -20,6 +21,9 @@ export default function Contact() {
         </a>
         <a href="https://www.instagram.com/alan_mak13/">
           <FontAwesomeIcon icon={faInstagram} size="4x" id="instagram"/>
+        </a>
+        <a href="https://www.github.com/alan-mak">
+          <img src={Gitdark} alt="git dark" id="github"/>
         </a>
       </div>
     <form autoComplete="off" onSubmit={(event) => event.preventDefault()}>
