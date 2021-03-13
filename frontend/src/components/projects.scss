@@ -1,0 +1,44 @@
+$imageHeight: 250px;
+
+#projects {
+  display:flex;
+
+  .container {
+    flex: 33%;
+    padding: 0 2em;
+    .indProject {
+      position:relative;
+      width: 100%;
+      height: auto;
+      margin-top: 5em;
+      
+      .overlay {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: blue;
+        transition: all 0.5s ease;
+        opacity: 0;
+
+        .description {
+          color: #fff;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .indProject:hover {
+      .overlay{
+        opacity:1;
+        display: block;
+        background: red;
+      }
+    }
+  }
+}

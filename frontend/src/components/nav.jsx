@@ -25,7 +25,7 @@ export default function Nav() {
     }
   ]
   return (
-    <div>
+    <div id="nav">
       Alan Mak
       <ul>
         {navs.map(link => 
