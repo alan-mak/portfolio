@@ -6,28 +6,39 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Nav() {
   const [menu, setMenu] = useState(false);
+
   const navs = [
     {
       path: '/about',
-      name: 'About'
+      name: 'About',
+      ref: 'about'
     },
     {
       path: '/skills',
-      name: 'Skills'
+      name: 'Skills',
+      ref: 'skills'
     },
     {
       path: '/projects',
-      name: 'Projects'
+      name: 'Projects',
+      ref: 'projects'
     },
     {
       path: '/contact',
-      name: 'Contact'
-    },
-    {
-      path: 'https://resume.creddle.io/resume/gqkkfwgrc0l',
-      name: 'Resume'
+      name: 'Contact',
+      ref: 'contact'
     }
   ]
+
+  function handleClick(obj) {
+    const anchor = document.querySelector(`#${obj.ref}`)
+    anchor.scrollIntoView({behavior: 'smooth'})
+  }
+
+  function resume() {
+    window.open("https://resume.creddle.io/resume/gqkkfwgrc0l")
+  }
+
   return (
     <div id="nav">
       <a href='/' id="logo">Alan Mak</a>
@@ -43,8 +54,13 @@ export default function Nav() {
         }}/>
         <ul className={ menu ? 'ul--show' : 'ul--hide' }>
           {navs.map((link, index) => 
-            <a key={index} href={link.path}>{link.name}</a>
-            )}
+            <li 
+              key={index}
+              onClick={() =>handleClick(link)}>
+                {link.name}
+            </li>
+          )}
+          <li onClick={resume}>Resume</li>
           <div className="circle" />
         </ul>
       </div>

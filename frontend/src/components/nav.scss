@@ -31,7 +31,7 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0;
-    a {
+    li, a {
       font-family: $fontfam;
       font-weight: 600;
       font-size: 1.5em;
@@ -41,7 +41,7 @@
       margin-right: 5vh;
       text-decoration: none;
     }
-    a:hover {
+    a:hover, li:hover {
       color: $primary;
       text-decoration: underline;
     }
