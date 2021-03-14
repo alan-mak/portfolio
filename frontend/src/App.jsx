@@ -14,9 +14,9 @@ function App() {
       <Nav />
       <div id="contentContainer">
         <Landing />
-        {/* <About /> */}
-        {/* <Skills /> */}
-        {/* <Projects /> */}
+        <About />
+        <Skills />
+        <Projects />
         <Contact />
       </div>
       <div id="footer">
