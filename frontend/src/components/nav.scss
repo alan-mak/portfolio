@@ -1,8 +1,41 @@
+@import '../styles/variables.scss';
+
 #nav {
-  background: transparent;
-  ul {
+  background: red;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  #logo {
+    text-decoration: none;
+    font-family: $fontfam;
+    font-size: 1.75em;
+    font-weight: 900;
+    color: $primary-dark;
+  }
+
+  .hamburger {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    background: yellow;
+    #fontBurger {
+      // margin-right: 3vh;
+      // margin-top: 3vh;
+    }
+  }
+
+  .ul--show {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     list-style-type: none;
+    // margin: 0;
+    // padding: 0;
+  }
+  .ul--hide {
+    display: none;
   }
 }

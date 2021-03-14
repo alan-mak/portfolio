@@ -1,8 +1,30 @@
-div.about {
-  display: flex;
-  justify-content: center;
+@import '../styles/variables.scss';
 
-  p {
-    width: 60%;
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: $section-height;
+  // width: 100%;
+  margin: 0 auto;
+  background: $primary-light;
+  color: $primary-dark;
+
+  .information {
+    // width: $section-width;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+      border-radius: 50%;
+      height: auto;
+      width: 40%;
+    }
+    p {
+      font-size: 1.7rem;
+      width: 50%;
+    }
   }
 }

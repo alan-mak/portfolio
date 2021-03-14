@@ -1,0 +1,10 @@
+@import '../styles/variables.scss';
+
+#landing {
+  min-height: $section-height;
+  width: $section-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

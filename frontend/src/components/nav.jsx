@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.scss'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 export default function Nav() {
+  const [menu, setMenu] = useState(false);
   const navs = [
     {
       path: '/about',
@@ -12,12 +16,12 @@ export default function Nav() {
       name: 'Skills'
     },
     {
-      path: '/contact',
-      name: 'Contact'
-    },
-    {
       path: '/projects',
       name: 'Projects'
+    },
+    {
+      path: '/contact',
+      name: 'Contact'
     },
     {
       path: 'https://resume.creddle.io/resume/gqkkfwgrc0l',
@@ -26,12 +30,20 @@ export default function Nav() {
   ]
   return (
     <div id="nav">
-      Alan Mak
-      <ul>
-        {navs.map(link => 
-          <a href={link.path}>{link.name}</a>
-        )}
-      </ul>
+      <a href='/' id="logo">Alan Mak</a>
+      <div className="hamburger">
+        <FontAwesomeIcon
+          id="fontBurger"
+          icon={faBars}
+          onClick={()=> {
+            menu ? (setMenu(false)): (setMenu(true))
+        }}/>
+        <ul className={ menu ? 'ul--show' : 'ul--hide' }>
+          {navs.map(link => 
+            <a href={link.path}>{link.name}</a>
+            )}
+        </ul>
+      </div>
     </div>
   )
 }

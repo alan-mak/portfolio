@@ -10,7 +10,7 @@ import Gitdark from '../img/github-dark.png'
 export default function Contact() {
   const { handleInput } = useApplicationData();
   return (
-    <div className="contact">
+    <div id="contact">
       Feel free to contact me!
       <div className="socials">
         <a href="https://twitter.com/alan_mak13">
