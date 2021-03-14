@@ -1,8 +1,7 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 import Nav from './components/nav'
@@ -19,27 +18,25 @@ function App() {
   return (
   <Router>
     <div id="pageContainer">
+      <Nav />
       <div id="contentContainer">
         <Switch>
           <Route path="/about">
-            <Nav />
             <About />
           </Route>
           <Route path="/skills">
-            <Nav />
             <Skills />
           </Route>
           <Route path="/projects">
-            <Nav />
             <Projects />
           </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/">
-            <Nav logic={true}/>
             <Landing />
           </Route>
-
         </Switch>
-        {/* <Contact /> */}
       </div>
       <div id="footer">
         <Footer />

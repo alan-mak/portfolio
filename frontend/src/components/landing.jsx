@@ -8,7 +8,12 @@ export default function Landing () {
   return(
     <div id="landing">
       <img src={Toronto} alt="background" />
-      <h1><strong>Hello I am Alan<br/>Full-Stack Web Developer</strong></h1>
+      <div id="first">
+        <h1><strong>Hello my name is Alan</strong></h1>
+      </div>
+      <div id="second">
+        <h1><strong>Full-Stack Web Developer</strong></h1>
+      </div>
     </div>
   )
 }
