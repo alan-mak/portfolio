@@ -1,14 +1,14 @@
 @import '../styles/variables.scss';
 
 #nav {
-  background: red;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: flex-start;
+  background: transparent;
+  position: fixed;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   #logo {
     text-decoration: none;
     font-family: $fontfam;
@@ -18,13 +18,11 @@
   }
 
   .hamburger {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
-    background: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     #fontBurger {
-      // margin-right: 3vh;
-      // margin-top: 3vh;
+      margin-right: 5vh;
     }
   }
 
@@ -32,10 +30,50 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    // margin: 0;
-    // padding: 0;
+    padding: 0;
+    a {
+      font-family: $fontfam;
+      font-weight: 600;
+      font-size: 1.5em;
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5vh;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+    .circle {
+      position:absolute;
+      top: -3vh;
+      right: 0;
+      z-index:-1;
+      display: block;
+      border-bottom-left-radius: 10%;
+      background: $primary-dark;
+      height: 110%;
+      width: 11%;
+      animation: animate 0.5s;
+    }
   }
   .ul--hide {
     display: none;
+    .circle {
+      position:absolute;
+      animation: reverse-animate 0.5s;
+    }
   }
+}
+
+@keyframes animate {
+  0% { opacity: 0; }
+  5% { opacity: 0.05; }
+  10% { opacity: 0.1; }
+  15% { opacity: 0.15; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
 }

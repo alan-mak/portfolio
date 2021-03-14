@@ -31,17 +31,21 @@ export default function Nav() {
   return (
     <div id="nav">
       <a href='/' id="logo">Alan Mak</a>
-      <div className="hamburger">
+      <div 
+        className="hamburger"
+        style={ menu ? {color:'white'} : {color: 'black'}}>
         <FontAwesomeIcon
           id="fontBurger"
           icon={faBars}
+          size='2x'
           onClick={()=> {
             menu ? (setMenu(false)): (setMenu(true))
         }}/>
         <ul className={ menu ? 'ul--show' : 'ul--hide' }>
-          {navs.map(link => 
-            <a href={link.path}>{link.name}</a>
+          {navs.map((link, index) => 
+            <a key={index} href={link.path}>{link.name}</a>
             )}
+          <div className="circle" />
         </ul>
       </div>
     </div>
