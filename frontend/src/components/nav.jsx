@@ -4,7 +4,7 @@ import './nav.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-export default function Nav() {
+export default function Nav(props) {
   const [menu, setMenu] = useState(false);
 
   const navs = [
@@ -38,13 +38,14 @@ export default function Nav() {
   function resume() {
     window.open("https://resume.creddle.io/resume/gqkkfwgrc0l")
   }
-
   return (
     <div id="nav">
-      <a onClick={() => handleClick('landing')} id="logo">Alan Mak</a>
+      <a
+        href={"/"}
+        id="logo">Alan Mak</a>
       <div 
         className="hamburger"
-        style={ menu ? {color:'white'} : {color: 'black'}}>
+        style={ menu ? {color:'white'} : {color: '#4056A1'}}>
         <FontAwesomeIcon
           id="fontBurger"
           icon={faBars}
@@ -54,11 +55,11 @@ export default function Nav() {
         }}/>
         <ul className={ menu ? 'ul--show' : 'ul--hide' }>
           {navs.map((link, index) => 
-            <li 
+            <a 
               key={index}
-              onClick={() =>handleClick(link.ref)}>
+              href={link.path}>
                 {link.name}
-            </li>
+            </a>
           )}
           <li onClick={resume}>Resume</li>
           <div className="circle" />

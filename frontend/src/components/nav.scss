@@ -9,12 +9,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  z-index: 5;
   #logo {
     text-decoration: none;
-    font-family: $fontfam;
-    font-size: 1.75em;
-    font-weight: 900;
-    color: $primary-dark;
+    font-family: 'Fascinate';
+    margin-left: 5vh;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1.5vw;
+    color: $nameColor;
   }
 
   .hamburger {
@@ -65,7 +68,12 @@
       animation: reverse-animate 0.5s;
     }
   }
+  .logo-hide {
+      display: none;
+      
+  }
 }
+
 
 @keyframes animate {
   0% { opacity: 0; }

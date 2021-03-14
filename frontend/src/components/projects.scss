@@ -4,8 +4,10 @@ $imageHeight: 250px;
 
 #projects {
   display:flex;
-  width: 80%;
+  // width: 80%;
+  height: $section-height;
   margin: 0 auto;
+  background: $primary-light;
   .container {
     flex: 33%;
     padding: 0 2em;
@@ -53,7 +55,7 @@ $imageHeight: 250px;
       .overlay{
         opacity:1;
         display: block;
-        background: red;
+        background: $primary-dark;
       }
     }
   }

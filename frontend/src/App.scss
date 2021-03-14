@@ -4,17 +4,15 @@ $footerHeight: 1.5rem;
 
 #pageContainer {
   position: relative;
-  min-height: 100vh;
-  // width: 100vw;
-  #contentContainer {
-    padding-bottom: $footerHeight;
-
-  }
+  min-height: 100%;
+  // #contentContainer {
+  //   margin-bottom: $footerHeight;
+  // }
   #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: $footerHeight
+    // height: $footerHeight
   }
 }
 

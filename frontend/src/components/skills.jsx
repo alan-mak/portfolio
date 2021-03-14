@@ -22,6 +22,7 @@ import './skills.scss';
 export default function Skills(props) {
   return(
     <div id="skills">
+      <h1>Skills</h1>
       <div className="language">
         <h1>Languages</h1>
         <div className="icon">

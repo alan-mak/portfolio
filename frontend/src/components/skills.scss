@@ -6,8 +6,10 @@ $logo-height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  // width: $section-width;
+  min-height: $section-height;
   margin: 0 auto;
+  background: $primary;
   h1 {
     display: flex;
     justify-content: center;
