@@ -31,7 +31,7 @@ export default function Nav() {
   ]
 
   function handleClick(obj) {
-    const anchor = document.querySelector(`#${obj.ref}`)
+    const anchor = document.querySelector(`#${obj}`)
     anchor.scrollIntoView({behavior: 'smooth'})
   }
 
@@ -41,7 +41,7 @@ export default function Nav() {
 
   return (
     <div id="nav">
-      <a href='/' id="logo">Alan Mak</a>
+      <a onClick={() => handleClick('landing')} id="logo">Alan Mak</a>
       <div 
         className="hamburger"
         style={ menu ? {color:'white'} : {color: 'black'}}>
@@ -56,7 +56,7 @@ export default function Nav() {
           {navs.map((link, index) => 
             <li 
               key={index}
-              onClick={() =>handleClick(link)}>
+              onClick={() =>handleClick(link.ref)}>
                 {link.name}
             </li>
           )}

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import CSS from '../img/css.png';
 import Express from '../img/express.png';
@@ -20,9 +20,8 @@ import Octocat from '../img/octocat.png';
 import './skills.scss';
 
 export default function Skills(props) {
-  const skills = useRef(null)
   return(
-    <div id="skills" ref={skills}>
+    <div id="skills">
       <div className="language">
         <h1>Languages</h1>
         <div className="icon">
