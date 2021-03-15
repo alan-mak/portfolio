@@ -6,10 +6,10 @@ $logo-height: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // width: $section-width;
   min-height: $section-height;
   margin: 0 auto;
   background: $primary;
+  padding-bottom: 5%;
   h1 {
     display: flex;
     justify-content: center;
@@ -24,6 +24,45 @@ $logo-height: 110px;
       height: $logo-height;
       object-fit: contain;
     }
+  }
+}
 
+@media (max-width: $screen2) {
+  $logo-width: 100px;
+  #skills {
+    h1 {
+      font-size: 1.8em;
+    }
+    .icon {
+      img {
+        width: $logo-width;
+      }
+    }
+  }
+}
+@media (max-width: $screen4) {
+  $logo-width: 85px;
+  $logo-height: 80px;
+  #skills {
+    h1 {
+      font-size: 1.5em;
+    }
+    .icon {
+      img {
+        width: $logo-width;
+        height: $logo-height;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  $logo-width: 65px;
+  #skills {
+    .icon {
+      img {
+        width: $logo-width;
+      }
+    }
   }
 }
