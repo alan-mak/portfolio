@@ -5,9 +5,7 @@ $footerHeight: 1.5rem;
 #pageContainer {
   position: relative;
   min-height: 100%;
-  // #contentContainer {
-  //   margin-bottom: $footerHeight;
-  // }
+
   #footer {
     position: absolute;
     bottom: 0;
@@ -17,7 +15,6 @@ $footerHeight: 1.5rem;
 }
 
 h1 {
-  font-family: 'Shippori Mincho';
   font-weight: 800;
 }
 
