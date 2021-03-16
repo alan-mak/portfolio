@@ -11,7 +11,7 @@ import Speer from '../img/speer.png';
 import Tiny from '../img/tinyapp.png';
 import Tweeter from '../img/tweeter.png';
 
-import './projects.scss'
+import './project.scss'
 
 export default function Projects() {
   return(
@@ -50,7 +50,7 @@ export default function Projects() {
           <img src={Scheduler} alt="Scheduler" />
           <div className="overlay">
             <div className="description">
-              <h1>Interview Scheduler</h1>
+              <h1>Scheduler</h1>
               <p>A single page appointment scheduling application responsible for booking, deleting and editing appointments built  using React and Express.js</p>
               <div className="link">
                 <a href="https://github.com/alan-mak/scheduler">

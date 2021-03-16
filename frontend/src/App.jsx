@@ -9,7 +9,7 @@ import Footer from './components/footer'
 import Contact from './components/contact'
 import About from './components/about'
 import Skills from './components/skills'
-import Projects from './components/projects'
+import Project from './components/project'
 import Landing from './components/landing'
 
 import './App.scss';
@@ -28,7 +28,7 @@ function App() {
             <Skills />
           </Route>
           <Route path="/projects">
-            <Projects />
+            <Project/>
           </Route>
           <Route path="/contact">
             <Contact />
