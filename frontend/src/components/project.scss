@@ -4,7 +4,7 @@ $overlayHeight: 29vh;
 #projects {
   display:flex;
   height: $section-height;
-  background: $primary-light;
+  background: $primary;
   #projectsHead {
     transform: rotate(270deg);
     height: 10vh;
@@ -13,7 +13,7 @@ $overlayHeight: 29vh;
     margin: auto auto auto 5%;
     font-family: $fontfams;
     font-size: 6vh;
-    color: $primary;
+    color: $primary-dark;
     letter-spacing: 7px;
     border-bottom: solid;
   }
@@ -45,7 +45,7 @@ $overlayHeight: 29vh;
         .description {
           font-size: 2vh;
           margin: 0.1em 0.1em 0 0.1em;
-          color: $fontColor2;
+          color: $fontColor;
           h1 {
             margin: 0.1em 0;
           }
@@ -57,7 +57,7 @@ $overlayHeight: 29vh;
             display: flex;
             justify-content: space-evenly;
             a {
-              color: $fontColor2;
+              color: $fontColor;
             }
           }
         }
@@ -67,7 +67,7 @@ $overlayHeight: 29vh;
     .indProject:hover {
       .overlay{
         opacity: 1;
-        background: $primary;
+        background: $primary-dark;
         .description {
           .link {
             a:hover {
