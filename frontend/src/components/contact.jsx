@@ -27,7 +27,7 @@ export default function Contact() {
               <img src={Email} alt="email"/>
             </a>
             <img src={Gitdark} alt="Github" onClick={() => {
-              window.open("https://www.github.com/alan-mak")
+              window.open("https://resume.creddle.io/resume/gqkkfwgrc0l")
             }}/>
           </div>
         </div>
