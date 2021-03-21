@@ -30,11 +30,6 @@ export default function Nav(props) {
     }
   ]
 
-  function handleClick(obj) {
-    const anchor = document.querySelector(`#${obj}`)
-    anchor.scrollIntoView({behavior: 'smooth'})
-  }
-
   function resume() {
     window.open("https://resume.creddle.io/resume/gqkkfwgrc0l")
   }

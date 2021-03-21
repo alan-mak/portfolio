@@ -16,7 +16,7 @@ import './project.scss'
 export default function Projects() {
   return(
     <div id="projects">
-      <h1 id="projectsHead">Projects</h1>
+      <h1 id="projectsHead">PROJECTS</h1>
       <div className="containContainer">
         <div className="indProject">
           <img src={Help} alt="HelpMeHelpYou" />

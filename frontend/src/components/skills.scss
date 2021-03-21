@@ -1,67 +1,179 @@
 @import '../styles/variables.scss';
+// $logo-width: 150px;
+// $logo-height: 110px;
+
 $logo-width: 150px;
-$logo-height: 110px;
+$logo-height: 150px;
 
 #skills {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: $section-height;
-  margin: 0 auto;
   background: $primary;
-  padding-bottom: 5%;
-  h1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
+  #skillsHead {
+    font-family: $fontfam;
+    width: auto;
+    letter-spacing: 7px;
+    font-size: 3vw;
+    transform: rotate(270deg);
+    margin: auto auto auto 5%;
+    border-bottom: solid;
+    color: $primary-dark;
   }
-  .icon {
+  .tab{
+    width: 70%;
+    height: 60vh;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1em;
-    img {
-      width: $logo-width;
-      height: $logo-height;
-      object-fit: contain;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    .skillsTab {
+      height: 7vh;
+      width: 100%;      
+      display: flex;
+      justify-content: flex-start;
+      h2 {
+        font-size: 2vh;
+        display: flex;
+      }
+      .head {
+        color: $fontColor2;
+        background: $primary;
+        h2:hover {
+          text-decoration: underline;
+        }
+      }
+      .active-head {
+        color: $fontColor;
+        background: $primary-dark;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      button {
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .contentsTab {
+      height: 100%;
+      
+      .content {
+        display: none;
+      }
+      .active-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background: $primary-dark;
+        border-bottom-left-radius: 20px;
+        position: relative;
+        .icons {
+          padding-top: 2vh;
+          padding-bottom: 2vh;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          img {
+            height: $logo-height;
+            width: $logo-width;
+            // max-height: 150px;
+            // max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen1) {
+  $logo-height: 130px;
+  $logo-width: 130px;
+  #skills {
+    .tab{
+      .contentsTab {
+        .content {
+          .icons {
+            img{
+              height: $logo-height;
+              width: $logo-width;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: $screen2) {
-  $logo-width: 100px;
   #skills {
-    h1 {
-      font-size: 1.8em;
-    }
-    .icon {
-      img {
-        width: $logo-width;
+    .tab{
+      .skillsTab{
+        h2 {
+          font-size: 1.5vh;
+        }
       }
-    }
-  }
-}
-@media (max-width: $screen4) {
-  $logo-width: 85px;
-  $logo-height: 80px;
-  #skills {
-    h1 {
-      font-size: 1.5em;
-    }
-    .icon {
-      img {
-        width: $logo-width;
-        height: $logo-height;
+      .contentsTab {
+        .content {
+          .icons {
+            display: flex;
+            flex-wrap: wrap;
+            img{
+              height: $logo-height;
+              width: $logo-width;
+            }
+          }
+        }
       }
     }
   }
 }
 
-@media (max-width: 500px) {
-  $logo-width: 65px;
+@media (max-width: $screen3) {
+  $logo-height: 70px;
+  $logo-width: 70px;
   #skills {
-    .icon {
-      img {
-        width: $logo-width;
+    .tab{
+      .skillsTab{
+        h2 {
+          font-size: 1.2vh;
+        }
+      }
+      .contentsTab {
+        .content {
+          .icons {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+              height: $logo-height;
+              width: $logo-width;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen4) {
+  $logo-height: 50px;
+  $logo-width: 50px;
+  #skills {
+    .tab{
+      .contentsTab {
+        .content {
+          .icons {
+            img{
+              height: $logo-height;
+              width: $logo-width;
+            }
+          }
+        }
       }
     }
   }

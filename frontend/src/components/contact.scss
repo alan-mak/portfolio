@@ -8,12 +8,13 @@
   background: $primary;
   #contactHead {
     font-family: $fontfam;
+    width: auto;
     letter-spacing: 7px;
     font-size: 3vw;
     transform: rotate(270deg);
-    margin: auto auto auto 5%;
+    margin: auto auto auto 5vw;
     border-bottom: solid;
-    color: $primary-light;
+    color: $primary-dark;
   }
   .contactContainer {
     width: 70%;
