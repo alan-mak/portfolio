@@ -17,16 +17,13 @@ $overlayHeight: 29vh;
     margin: auto auto auto 5vw;
     border-bottom: solid;
     color: $primary-dark;
-    // height: 10vh;
-    // display: flex;
-    // align-items: center;
   }
   .containContainer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 70%;
-    height: 80vh;
+    height: 100%;
     margin: 10vh 1vw 5vh 0;
     .indProject {
       // flex sets the number per row
@@ -100,6 +97,7 @@ $overlayHeight: 29vh;
 
 @media (max-width: $screen1) {
   #projects {
+    height: 100%;
     .containContainer {
       .indProject {
         .overlay {
