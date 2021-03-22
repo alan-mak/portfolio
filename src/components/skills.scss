@@ -91,7 +91,7 @@ $logo-height: 150px;
   }
 }
 
-@media (max-width: $screen1) {
+@media only screen and (max-width: $screen1) {
   $logo-height: 130px;
   $logo-width: 130px;
   #skills {
@@ -110,7 +110,7 @@ $logo-height: 150px;
   }
 }
 
-@media (max-width: $screen2) {
+@media only screen and (max-width: $screen2) {
   #skills {
     .tab{
       .skillsTab{
@@ -134,7 +134,7 @@ $logo-height: 150px;
   }
 }
 
-@media (max-width: $screen3) {
+@media only screen and (max-width: $screen3) {
   $logo-height: 70px;
   $logo-width: 70px;
   #skills {
@@ -160,7 +160,7 @@ $logo-height: 150px;
   }
 }
 
-@media (max-width: $screen4) {
+@media only screen and (max-width: $screen4) {
   $logo-height: 50px;
   $logo-width: 50px;
   #skills {

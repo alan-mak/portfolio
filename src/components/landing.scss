@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: $screen1) {
+@media only screen and (max-width: $screen1) {
   #landing {
     font-size: 0.9rem;
     #first {
@@ -42,13 +42,13 @@
   }
 }
 
-@media (max-width: $screen2) {
+@media only screen and (max-width: $screen2) {
   #landing {
     font-size: 0.7rem;
   }
 }
 
-@media (max-width: $screen3) {
+@media only screen and (max-width: $screen3) {
   $together: 5%;
   #landing {
     font-size: 0.7rem;
@@ -70,13 +70,13 @@
   }
 }
 
-@media (max-width: $screen4) {
+@media only screen and (max-width: $screen4) {
   #landing {
     font-size: 0.5rem;
   }
 }
 
-@media (max-width: $screen5) {
+@media only screen and (max-width: $screen5) {
   $together: 40%;
   #landing {
     #first {

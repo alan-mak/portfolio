@@ -57,7 +57,7 @@
   }
 }
 
-@media(max-width: $screen2) {
+@media only screen and (max-width: $screen2) {
   #contact{
     .contactContainer {
       font-size: 2.5vw;
@@ -65,7 +65,7 @@
   }
 }
 
-@media(max-width: $screen3) {
+@media only screen and (max-width: $screen3) {
   #contact {
     #contactHead {
       font-size: 5vw;
@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: $screen5) {
+@media only screen and (max-width: $screen5) {
   #contact {
     .contactContainer{
       .socials {
