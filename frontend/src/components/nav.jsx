@@ -39,8 +39,7 @@ export default function Nav(props) {
         href={"/"}
         id="logo">Alan Mak</a>
       <div 
-        className="hamburger"
-        style={ menu ? {color:'white'} : {color: '#4056A1'}}>
+        className={ menu ? "hamburger show" : "hamburger" }>
         <FontAwesomeIcon
           id="fontBurger"
           icon={faBars}
@@ -57,7 +56,6 @@ export default function Nav(props) {
             </a>
           )}
           <li onClick={resume}>Resume</li>
-          <div className="circle" />
         </ul>
       </div>
     </div>

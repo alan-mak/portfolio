@@ -24,9 +24,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    color: $nameColor;
     #fontBurger {
-      margin-right: 5vh;
+      margin-right: 5vw;
     }
+  }
+
+  .hamburger.show {
+    color: $fontColor;
+    background: $nameColor;
+    animation: animate 0.5s;
+    border-bottom-left-radius: 10%;
+    width: 250px;
+    padding-top: 3vh;
+    margin-top: -3vh;
   }
 
   .ul--show {
@@ -34,6 +46,7 @@
     flex-direction: column;
     list-style-type: none;
     padding: 0;
+    position: relative;
     li, a {
       font-family: $fontfam;
       font-weight: 200;
@@ -41,7 +54,7 @@
       color: #fff;
       display: flex;
       justify-content: flex-end;
-      margin-right: 5vh;
+      margin-right: 5vw;
       text-decoration: none;
       letter-spacing: 3px;
     }
@@ -49,28 +62,9 @@
       color: $primary;
       text-decoration: underline;
     }
-    .circle {
-      position:absolute;
-      top: -3vh;
-      right: 0;
-      z-index:-1;
-      display: block;
-      border-bottom-left-radius: 10%;
-      background: $nameColor;
-      height: 110%;
-      width: 11%;
-      animation: animate 0.5s;
-    }
   }
   .ul--hide {
     display: none;
-    .circle {
-      position:absolute;
-    }
-  }
-  .logo-hide {
-      display: none;
-      
   }
 }
 
@@ -89,22 +83,14 @@
 @media (max-width: $screen1) {
   #nav {
     font-size: 90%;
-    .hamburger {
-      .circle {
-        width: 15%;
-      }
+    .hamburger.show {
+      width: 20%;
     }
   }
 }
 
 @media (max-width: $screen2) {
   #nav {
-    font-size: 90%;
-    .hamburger {
-      .circle {
-        width: 18%;
-      }
-    }
     .ul--show {
       li, a {
         font-size: 1.2em;
@@ -115,11 +101,6 @@
 
 @media (max-width: $screen3) {
   #nav {
-    .hamburger {
-      .circle {
-        width: 21%;
-      }
-    }
     .ul--show {
       li, a {
         font-size: 1.0em;
@@ -131,11 +112,6 @@
 @media (max-width: $screen4) {
   #nav {
     font-size: 80%;
-    .hamburger {
-      .circle {
-        width: 20%;
-      }
-    }
     .ul--show {
       li, a {
         font-size: 1.0em;
@@ -147,10 +123,8 @@
 @media (max-width: $screen5) {
   #nav {
     font-size: 75%;
-    .hamburger {
-      .circle {
-        width: 26%;
-      }
+    .hamburger.show {
+      width: 23%;
     }
     .ul--show {
       li, a {
