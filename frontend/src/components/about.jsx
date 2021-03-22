@@ -6,7 +6,7 @@ import './about.scss'
 export default function About(props) {
   return (
     <div id="about">
-      <h1>About Me</h1>
+      <h1>ABOUT ME</h1>
       <div className="information">
         <img src={Alan} alt="Profile Pic"/>
         <p>
