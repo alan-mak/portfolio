@@ -36,13 +36,14 @@
     padding: 0;
     li, a {
       font-family: $fontfam;
-      font-weight: 600;
+      font-weight: 200;
       font-size: 1.5em;
       color: #fff;
       display: flex;
       justify-content: flex-end;
       margin-right: 5vh;
       text-decoration: none;
+      letter-spacing: 3px;
     }
     a:hover, li:hover {
       color: $primary;
@@ -55,7 +56,7 @@
       z-index:-1;
       display: block;
       border-bottom-left-radius: 10%;
-      background: $primary-dark;
+      background: $nameColor;
       height: 110%;
       width: 11%;
       animation: animate 0.5s;
@@ -83,4 +84,78 @@
   50% { opacity: 0.5; }
   75% { opacity: 0.75; }
   100% { opacity: 1; }
+}
+
+@media (max-width: $screen1) {
+  #nav {
+    font-size: 90%;
+    .hamburger {
+      .circle {
+        width: 15%;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen2) {
+  #nav {
+    font-size: 90%;
+    .hamburger {
+      .circle {
+        width: 18%;
+      }
+    }
+    .ul--show {
+      li, a {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen3) {
+  #nav {
+    .hamburger {
+      .circle {
+        width: 21%;
+      }
+    }
+    .ul--show {
+      li, a {
+        font-size: 1.0em;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen4) {
+  #nav {
+    font-size: 80%;
+    .hamburger {
+      .circle {
+        width: 20%;
+      }
+    }
+    .ul--show {
+      li, a {
+        font-size: 1.0em;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen5) {
+  #nav {
+    font-size: 75%;
+    .hamburger {
+      .circle {
+        width: 26%;
+      }
+    }
+    .ul--show {
+      li, a {
+        font-size: 0.8em;
+      }
+    }
+  }
 }

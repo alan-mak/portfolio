@@ -9,9 +9,7 @@ export default function About(props) {
       <h1>ABOUT ME</h1>
       <div className="information">
         <img src={Alan} alt="Profile Pic"/>
-        <p>
-        I am a Toronto based web developer with an interest in front end design. I studied at Ryerson   University in Toronto for my Bachelors and Masters of Engineering in Aerospace Engineering. I   then went to Lighthouse Lab's Web Development Bootcamp in 2020. You can check out some of the   work I have done in the 'Projects' section
-        </p>
+        <p>I am a Toronto based web developer with an interest in front end design. I studied at Ryerson University in Toronto for my Bachelors and Masters of Engineering in Aerospace Engineering. I then went to Lighthouse Lab's Web Development Bootcamp in 2020. You can check out some of the work I have done in the <a href="/projects">Projects</a> section</p>
       </div>
     </div>
   )
