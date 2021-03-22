@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://alanmak.netlify.app/",
   "private": true,
   "homepage": "https://alan-mak.github.io/portfolio",
   "dependencies": {
