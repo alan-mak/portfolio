@@ -96,7 +96,7 @@ $overlayHeight: 29vh;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media only screen and (max-width: $screen1) {
+@media only screen and (min-width: $screen12) and (max-width: $screen1) {
   #projects {
     height: 100%;
     .containContainer {
@@ -114,7 +114,7 @@ $overlayHeight: 29vh;
   }
 }
 
-@media only screen and (max-width: $screen2) {
+@media only screen and (min-width: $screen22) and (max-width: $screen2) {
   #projects {
     height: 100%;
     #projectsHead{
@@ -137,7 +137,7 @@ $overlayHeight: 29vh;
   }
 }
 
-@media only screen and (max-width: $screen4) {
+@media only screen and (min-width: $screen42) and(max-width: $screen4) {
   $overlayHeight: 60vh;
   #projects {
     height: 100%;
