@@ -26,6 +26,7 @@
     align-items: flex-end;
     position: relative;
     color: $nameColor;
+    cursor: pointer;
     #fontBurger {
       margin-right: 5vw;
     }
@@ -43,7 +44,7 @@
 
   .ul--show {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     list-style-type: none;
     padding: 0;
     position: relative;

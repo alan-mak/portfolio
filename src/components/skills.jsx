@@ -38,6 +38,7 @@ export default function Skills(props) {
               key={index}
               onClick={() => toggleTab(index) }
               className={tab === index ? 'head active-head' : 'head'}
+              style={tab === index ? {color:"#FFF"}: {color: "#2E8DB8"}}
             >
               <h2>{skill}</h2>
             </button>

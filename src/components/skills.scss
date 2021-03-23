@@ -30,7 +30,7 @@ $logo-height: 150px;
       height: 7vh;
       width: 100%;      
       display: flex;
-      justify-content: left;
+      justify-content: space-between;
       h2 {
         font-size: 2vh;
         display: flex;
@@ -38,11 +38,13 @@ $logo-height: 150px;
       .head {
         color: $fontColor2;
         background: $primary;
+        text-decoration: underline;
         h2:hover {
-          text-decoration: underline;
+          cursor: pointer;
         }
       }
-      .active-head {
+      .head.active-head {
+        text-decoration: none;
         color: $fontColor;
         background: $primary-dark;
         border-top-left-radius: 20px;

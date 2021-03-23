@@ -9,14 +9,9 @@ export default function Nav(props) {
 
   const navs = [
     {
-      path: '/about',
-      name: 'About',
-      ref: 'about'
-    },
-    {
-      path: '/skills',
-      name: 'Skills',
-      ref: 'skills'
+      path: '/contact',
+      name: 'Contact',
+      ref: 'contact'
     },
     {
       path: '/projects',
@@ -24,9 +19,19 @@ export default function Nav(props) {
       ref: 'projects'
     },
     {
-      path: '/contact',
-      name: 'Contact',
-      ref: 'contact'
+      path: '/skills',
+      name: 'Skills',
+      ref: 'skills'
+    },
+    {
+      path: '/about',
+      name: 'About',
+      ref: 'about'
+    },
+    {
+      path: '/',
+      name: 'Home',
+      ref: 'home'
     }
   ]
 
@@ -48,6 +53,7 @@ export default function Nav(props) {
             menu ? (setMenu(false)): (setMenu(true))
         }}/>
         <ul className={ menu ? 'ul--show' : 'ul--hide' }>
+            <li onClick={resume}>Resume</li>
           {navs.map((link, index) => 
             <a 
               key={index}
@@ -55,7 +61,6 @@ export default function Nav(props) {
                 {link.name}
             </a>
           )}
-          <li onClick={resume}>Resume</li>
         </ul>
       </div>
     </div>
