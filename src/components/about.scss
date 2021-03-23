@@ -1,5 +1,7 @@
 @import '../styles/variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 #about {
   display: flex;
   align-items: center;
@@ -37,7 +39,17 @@
       font-size: 85%;
       margin: auto 0;
       a {
+        border: solid #fff thin;
         color: $fontColor;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'Roboto Mono';
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      a:hover {
+        background: lightgrey;
+        color: $primary-dark;
       }
     }
   }
