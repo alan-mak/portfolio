@@ -1,5 +1,7 @@
 @import '../styles/variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 #landing {
   height: $section-height;
   display: flex;
@@ -9,6 +11,7 @@
   background: #efe2ba;
   overflow-y: hidden;
   position: relative;
+  color: $fontColor2;
   img {
     position: absolute;
     left: 0;
@@ -21,13 +24,13 @@
     position: absolute;
     right: 20vw;
     bottom: 11vh;
-    color: $nameColor;
+    font-family: 'Gloria Hallelujah' ;
   }
   #second {
     position: absolute;
     right: 3vw;
     bottom: 3vh;
-    color: $nameColor
+    font-family: 'Gloria Hallelujah';
   }
 }
 

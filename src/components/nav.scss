@@ -1,5 +1,7 @@
 @import '../styles/variables.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 #nav {
   background: transparent;
   position: fixed;
@@ -49,9 +51,9 @@
     padding: 0;
     position: relative;
     li, a {
-      font-family: $fontfam;
-      font-weight: 200;
-      font-size: 1.5em;
+      font-family: 'Caveat';
+      font-weight: 500;
+      font-size: 2em;
       color: #fff;
       display: flex;
       justify-content: flex-end;
