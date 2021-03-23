@@ -175,3 +175,23 @@ $logo-height: 150px;
     }
   }
 }
+
+@media only screen and (max-width: $screen5) {
+  #skills {
+    .tab{
+      .skillsTab{
+        h2 {
+          font-size: 0.9vh;
+        }
+      }
+      .contentsTab {
+        .content {
+          .icons {
+            img{
+            }
+          }
+        }
+      }
+    }
+  }
+}
